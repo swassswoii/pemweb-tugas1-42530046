@@ -1,0 +1,360 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #4f46e5;
+    --color-primary-dark: #3730a3;
+    --color-secondary: #eef2ff;
+
+    --color-text: #1e293b;
+    --color-text-light: #64748b;
+    --color-white: #ffffff;
+    --color-background: #f8fafc;
+
+    --font-main: Arial, sans-serif;
+
+    --space-small: 0.5rem;
+    --space-medium: 1rem;
+    --space-large: 1.5rem;
+    --space-xl: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background-color: var(--color-white);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-medium);
+    padding: var(--space-medium);
+}
+
+nav > a:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-medium);
+}
+
+nav ul a {
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+nav ul a:hover {
+    color: var(--color-primary);
+}
+
+nav > a:last-child {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+nav > a:last-child:hover {
+    background-color: var(--color-primary-dark);
+}
+
+#hero {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: var(--color-secondary);
+}
+
+#hero h1 {
+    font-size: 2rem;
+    margin-bottom: var(--space-medium);
+}
+
+#hero p {
+    max-width: 650px;
+    margin: 0 auto var(--space-large);
+    color: var(--color-text-light);
+}
+
+#hero a {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+#hero a:hover {
+    background-color: var(--color-primary-dark);
+}
+
+#fitur {
+    padding: 4rem 1rem;
+}
+
+#fitur > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#fitur {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#fitur > h2 {
+    grid-column: 1 / -1;
+}
+
+#fitur article {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+}
+
+#fitur article h3 {
+    margin-bottom: 0.5rem;
+}
+
+#fitur article p {
+    color: var(--color-text-light);
+}
+
+#harga {
+    padding: 4rem 1rem;
+}
+
+#harga > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#harga {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#harga > h2 {
+    grid-column: 1 / -1;
+}
+
+#harga article {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+}
+
+#harga article h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+#harga article p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#harga article p:last-child {
+    color: var(--color-text-light);
+}
+
+#testimoni {
+    padding: 4rem 1rem;
+    background-color: var(--color-secondary);
+}
+
+#testimoni > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#testimoni {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#testimoni > h2 {
+    grid-column: 1 / -1;
+}
+
+#testimoni article {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+}
+
+#testimoni article h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+#testimoni article p {
+    color: var(--color-text-light);
+}
+
+#mulai {
+    margin: 1rem;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 1rem;
+}
+
+#mulai h2 {
+    margin-bottom: 0.75rem;
+}
+
+#mulai p {
+    margin-bottom: 1.5rem;
+}
+
+#mulai a {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--color-text);
+    color: var(--color-white);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #hero {
+        padding: 6rem 2rem;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #fitur {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    #harga {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    #testimoni {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 2rem;
+    }
+
+    #testimoni > h2 {
+        grid-column: 1 / -1;
+    }
+
+    #mulai {
+        margin-inline: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    #hero {
+        padding: 8rem 2rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #fitur {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding-inline: 2rem;
+    }
+
+    #harga {
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 2rem;
+    }
+
+    #testimoni {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    #mulai {
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+}
